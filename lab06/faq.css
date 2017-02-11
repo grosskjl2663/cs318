@@ -1,0 +1,17 @@
+body {
+    background-color: #2B3E85;
+}
+
+h3 {
+    font-size: 24pt;
+    font-family: Fjalla One;
+    text-shadow: 4px 1px 5px #000000;
+    color: #EDAC1A;
+    margin-bottom: 0;
+}
+
+.answer {
+    font-family: Josefin Sans;
+    color: white;
+    margin-top: 0;
+}
