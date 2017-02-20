@@ -1,0 +1,16 @@
+body {
+    background-image: url(Images/starfield.jpg);
+    color: white;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+li {
+    list-style-image: url(Images/moon.png);
+    font-size: 18pt;
+}

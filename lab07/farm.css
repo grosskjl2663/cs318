@@ -1,0 +1,31 @@
+img {
+    background-repeat: no-repeat;
+}
+
+body {
+    background-image: url(Images/farm.jpg);
+    background-repeat: no-repeat;
+    background-color: bisque;
+    text-align: right;
+}
+
+div {
+    background-image: url(Images/cow.png);
+    background-size: 110px;
+    background-repeat: no-repeat;
+    height: 75px;
+    width: 2048px;
+    margin-top: 533px;
+}
+
+h1 {
+    color: firebrick;
+}
+
+a {
+    color: darkgoldenrod;
+}
+
+b {
+    background-color: bisque;
+}
