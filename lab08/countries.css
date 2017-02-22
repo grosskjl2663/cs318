@@ -1,0 +1,37 @@
+body {
+    background-color: azure;
+}
+
+div {
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.stamp {
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border-style: dashed;
+    border-width: 4px;
+    border-color: lawngreen;
+    box-shadow: 5px 5px 10px grey;
+    background-position: top right, center;
+    background-size: 30%, auto 100%;
+    background-repeat: no-repeat, no-repeat;
+}
+
+#spain {
+    background-image: url(Images/spainflag.gif), url(Images/spainmap.jpg);
+}
+
+#canada {
+    background-image: url(Images/canadaflag.gif), url(Images/canadamap.jpg);
+}
+
+#egypt {
+    background-image: url(Images/egyptflag.gif), url(Images/egyptmap.jpg);
+}
+
+#chile {
+    background-image: url(Images/chileflag.gif), url(Images/chilemap.jpg);
+}
