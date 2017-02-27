@@ -1,0 +1,60 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.blurb {
+    width: 90%;
+    box-shadow: 3px 5px 8px #000000;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    min-height: 202px;
+    min-width: 400px;
+    background-size: auto 200px;
+    background-repeat: no-repeat;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.right {
+    background-color: aqua;
+    margin-left: auto;
+    background-image: url(Images/pitbull.jpg);
+    background-position: right;
+    background-size: auto 100%;
+    border-radius: 100px 0 0 100px;
+    padding-right: 150px;
+    padding-left: 115px;
+    padding-top: 10px;
+}
+
+.left {
+    background-color: darkcyan;
+    background-image: url(Images/iggyazalea.jpg);
+    background-position: left;
+    background-size: auto 100%;
+    border-radius: 0 100px 100px 0;
+    padding-top: 10px;
+    padding-left: 175px;
+    padding-right: 80px;
+}
+
+h1 {
+    background-image: linear-gradient(to bottom, darkcyan, aqua);
+    background-size: cover;
+    margin-top: 0;
+    box-shadow: inset 0 -5px 5px white;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#best {
+    color: white;
+}
+
+#frenemies {
+    color: black;
+}
