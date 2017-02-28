@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+.photo {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin: 15px;
+    box-shadow: 5px 10px 15px grey;
+    position: relative;
+}
+
+.photo:hover {
+    box-shadow: 5px 5px 5px grey;
+    top: 5px;
+    left: 5px;
+}
+
+.name {
+    font-size: 35px;
+    font-family: sans-serif;
+    color: gold;
+    text-shadow: 5px 1px 1px black;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    text-align: center;
+}
+
+#billy {
+    background-image: url(https://www.uwec.edu/images/Felz_Billy_2015.jpg);
+    background-size: 100%;
+}
+
+#staci {
+    background-image: url(https://www.uwec.edu/connect/advising/about/staff/images/Staci-Heidtke-2016.jpg);
+    background-size: 100%;
+}
+
+#sue {
+    background-image: url(http://www.uwec.edu/Career/about/images/sue_2.jpg);
+    background-size: 100%;
+}
+
+#melody {
+    background-image: url(https://www.uwec.edu/connect/advising/about/staff/images/Melody-Manteufel-2016.jpg);
+    background-size: 100%;
+}
