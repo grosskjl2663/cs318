@@ -1,0 +1,111 @@
+body {
+    background-color: #B2510B;
+}
+
+.body {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0px 0px 30px black;
+}
+
+header {
+    background-color: #FF7D1F;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    font-family: 
+}
+
+nav {
+    background-color: #B2510B;
+    float: left;
+}
+
+main {
+    background-color: #B2CE51;
+    margin-left: 110px;
+    padding: 10px;
+    margin-top: 0;
+}
+
+footer {
+    background-color: #CE7119;
+    margin-left: 110px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    clear: both;
+}
+
+li {
+    list-style-type: none;
+    text-shadow: 0px 2px 5px black;
+}
+
+a {
+    text-decoration: none;
+    color: antiquewhite
+}
+
+a:hover {
+    color: darkred;
+}
+
+#orderlink {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 35px;
+    text-shadow: 5px 5px 5px black;
+}
+
+.ordernow {
+    background-image: url(Images/ordernow.png);
+    background-repeat: none;
+    width: 200px;
+    height: 200px;
+    background-size: 100%;
+    top: 10px;
+    right: 10px;
+    position: fixed;
+}
+
+#home {
+    width: 100%;
+}
+
+#rightimage {
+    float: right;
+    width: 200px;
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-left: 10px;
+}
+
+#description {
+    margin-top: 5px;
+}
+
+#leftimage {
+    float: left;
+    width: 200px;
+    clear: both;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-right: 10px;
+}
+
+#types {
+    clear: both;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+iframe {
+    width: 100%;
+}
