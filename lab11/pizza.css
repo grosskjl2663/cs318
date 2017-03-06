@@ -20,7 +20,13 @@ header {
 
 nav {
     background-color: #B2510B;
+    width: 110px;
+    text-align: left;
     float: left;
+}
+
+ul {
+    padding-left: 20px;
 }
 
 main {
@@ -81,7 +87,6 @@ a:hover {
 #rightimage {
     float: right;
     width: 200px;
-    clear: both;
     padding-top: 10px;
     padding-bottom: 0;
     padding-left: 10px;
@@ -101,7 +106,6 @@ a:hover {
 }
 
 #types {
-    clear: both;
     margin-bottom: 0;
     margin-top: 0;
 }
