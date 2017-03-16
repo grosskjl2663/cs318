@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 700px;
+    height: auto;
+    margin: auto;
+    background-color: #17E59E;
+}
+
+body {
+    background-image: linear-gradient(to top, #B25600, #FF922C);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header {
+    background-color: #4C3F1E;
+    color: white;
+}
+
+#title {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px;
+}
+
+#path {
+    height: auto;
+    width: 600px;
+    padding: 10px;
+}
+
+h2 {
+    margin: 0;
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+
+p {
+    padding-left: 12px;
+}
+
+nav {
+    background-color: #17E59E;
+    width: 100px;
+    height: auto;
+    float: left;
+    padding: 15px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+li {
+    list-style: none;
+    font-family: sans-serif;
+    padding-top: 5px;
+}
+
+#steps {
+    list-style: inherit; 
+    padding-right: 20px;
+    font-family: serif;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #FE8819;
+}
+
+main {
+    background-color: white;
+    margin-bottom: 0;
+    width: 600px;
+    height: auto;
+    float: right;
+}
+
+footer {
+    clear: both;
+    background-color: #4C3F1E;
+    color: white;
+    text-align: right;
+}
+
+#copyright {
+    padding: 10px;
+}
+
+aside {
+    float: right;
+    background-color: #2FBCB3;
+    padding-left: 0;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+iframe {
+    width: 100%;
+    padding: 20px;
+}
+
+@media (max-width: 50em) {
+    
+    .container {
+        width: 100%;
+        margin: 0;
+    }
+    
+    img {
+        max-width: 100%;
+    }
+    
+    main {
+        position: static;
+        width: 100%;  
+        clear: both;
+    }
+    
+    nav {
+        display: inline;
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    
+    #steps {
+        display: inherit;
+        font-size: 12pt;
+        margin-left: 0;
+        margin-top: 10px;
+        font-family: serif;
+    }
+    
+    li {
+        display: inline;
+        font-size: 20pt;
+        margin-left: 15pt;
+    }
+    
+    aside {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    
+}
