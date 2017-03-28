@@ -1,0 +1,21 @@
+td {
+    height: 3em;
+    width: 3em;
+    text-align: center;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+td:hover {
+    background-color: yellow;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#free {
+    background-color: skyblue;
+}
