@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+div {
+    display: inline-block;
+}
+
+h1, h2 {
+    color: white;
+}
+
+li {
+    color: white;
+    
+}
+
+.box {
+    height: 10px;
+    width: 40px;
+}
+
+#red {
+    background-color: red;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+.shape {
+    height: 100px;
+    width: 100px;
+}
+
+#square {
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+#circle {
+    background-color: white;
+    border-radius: 100%;
+}
+
+.numbers {
+    height: 100px;
+    width: 100px;
+    border-width: 10px;
+    border-style: solid;
+}
+
+.ol {
+    margin-bottom: 10px;
+}
+#first {
+    border-top-color: white;
+    border-left-color: dimgrey;
+    border-right-color: dimgrey;
+    border-bottom-color: dimgrey;
+}
+
+#second {
+    border-top-color: white;
+    border-left-color: dimgrey;
+    border-right-color: dimgrey;
+    border-bottom-color: white;
+}
+
+#third {
+    border-top-color: white;
+    border-left-color: dimgrey;
+    border-right-color: white;
+    border-bottom-color: white;
+}
+
+#fourth {
+    border-color: white;
