@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+tr:nth-child(even) {
+    background-color: lightgrey;
+}
+
+td:nth-child(2) {
+    text-align: right;
+}
+
+table {
+    border-spacing: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+td {
+    padding: 3px;
+    width: 10em;
+}
+
+header h1 {
+    background-color: maroon;
+    color: white;
+    margin: 0;
+    padding: 5px;
+}
+
+header {
+    position: relative;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: darkblue;
+    margin: 0;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: white;
+    padding-left: 0;
+}
+
+.label {
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: white;
+    position: relative;
+}
+
+.label:hover {
+    background-color: darkslategrey;
+    cursor: pointer;
+}
+
+.label ul {
+    min-width: 50px;
+    width: 200px;
+    left: 0;
+    top: 100%;
+    position: absolute;
+    background-color: darkslategrey;
+    box-shadow: 5px 5px 5px grey;
+    padding: 5px;
+    display: none;
+}
+
+.label ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    padding: 3px;
+}
+
+.label ul li a:hover {
+    background-color: lightgrey;
+}
+
+.label:hover ul {
+    display: block;
+}
+
+#lines {
+    display: none;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: white;
+    font-size: 27px;
+    position: absolute;
+}
+
+header div ul li {
+    font-size: 15pt;
+}
+
+@media (max-width: 40em) {
+    nav {
+        display: none;
+    }
+    
+    #lines {
+        display: inline-block;
+    
+    }
+}

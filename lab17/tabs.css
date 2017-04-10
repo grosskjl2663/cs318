@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+}
+
+.tabbutton {
+    display: inline-block;
+    background-color: aqua;
+    width: 200px;
+    height: 50px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+.tabbutton:focus {
+    background-color: cadetblue;
+}
+
+#tabview0 {
+    display: block;
+    background-color: aqua;
+}
+
+.tabview {
+    background-color: cadetblue;
+    width: 100%;
+    height: 10em;
+    position: absolute;
+    left: 0;
+    top: 50px;
+    display: none;
+}
+
+#tabparent {
+    position: relative;
+    display: inline-block;
+}
+
+#taba:focus ~ #tabviewA {
+    display: block;
+}
+
+#tabb:focus ~ #tabviewB {
+    display: block;
+}
+
+#tabc:focus ~ #tabviewC {
+    display: block;
+}
