@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+}
+
+#container {
+    background-color: burlywood;
+    height: 500px;
+    position: relative;
+}
+
+.page {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    display: none;
+}
+
+#page1 {
+    background-image: url(Images/sunset.jpg)
+}
+
+#page2 {
+    background-image: url(Images/utopia.jpg)
+}
+
+#page3 {
+    background-image: url(Images/california.jpg)
+}
+
+input[type="radio"]:checked + .page {
+    display: block;
+}
+
+#controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    user-select: none;
+}
+
+label {
+    font-size: 27px;
+    color: white;
+    cursor: pointer;
+}
+
+input {
+    display: none;
+}
+
+#show1:checked ~ #controls label:nth-child(1), #show2:checked ~ #controls label:nth-child(2), #show3:checked ~ #controls label:nth-child(3) {
+    color: darkslategrey;
+}

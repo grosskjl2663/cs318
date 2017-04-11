@@ -1,0 +1,44 @@
+form {
+    background-color: lightgrey;
+    width: 340px;
+    height: 375px;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: sans-serif;
+}
+
+label {
+    width: 75px;
+    font-size: 15pt;
+    float: left;
+    clear: left;
+    display: block;
+    text-align: right;
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+input, textarea, #send {
+    display: block;
+    float: right;
+    clear: right;
+    margin: 5px;
+    font-size: 15pt;
+}
+
+textarea {
+    display: block;
+    position: relative;
+    width: 95%;
+    height: 50%;
+    margin-top: 5px;
+}
+
+#send {
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    font-size: 15pt;
+    padding: 10px
+}
