@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="quiz.css">
+</head>
+<body>
+    <form action="https://formspree.io/joseph.grosskreutz@gmail.com" method="post">
+        <h1>Quiz</h1>
+        <ol>
+            <li>
+            <label>What do the Amish use for transportation?</label><br>
+                <input type="radio" name="Transportation" id="Car"> <label>Car</label><br>
+                <input type="radio" name="Transportation" id="Tractor"> <label>Tractor</label><br>
+                <input type="radio" name="Transportation" id="Buggie"> <label>Horse &amp; Buggie</label><br>
+                <input type="radio" name="Transportation" id="Car"> <label>Snow plow</label>
+            </li>
+            <li>
+            <label>What what would be common to observe during an Amish worship service?</label><br>
+                <select name="Service" id="Service" size="4" multiple="3">
+                    <option value="Footwashing">Foot Washing</option>
+                    <option value="Singing">Singing with a piano</option>
+                    <option value="Speaking">Speaking Pennsylvania Dutch</option>
+                    <option value="Money">Collect money for a fellow neighbor's burnt down farmhouse</option>
+                </select>
+            </li>
+            <li>
+            <label>Oh dear, dad has been complaining about some chest pains these past couple days. We should take him to the</label><input type="text" name="answer" id="answer">.
+            </li>
+            <li>
+                <label>Are Amish women's roles in Amish society repressive? Why or why not?</label><br>
+                <textarea name="essay" cols="50"></textarea>
+            </li>
+            <li>
+                <label>Amish culture is more holy, sincere, and wholesome than mainstream culture.</label><br>
+                <input type="radio" name="TF" value="True">
+                <label>True</label>
+                <input type="radio" name="TF" value="False">
+                <label>False</label>
+            </li>
+            <input type="submit" value="Submit" id="submit">
+        </ol>
+    </form>
+</body>
+</html>

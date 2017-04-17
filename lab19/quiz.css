@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+form {
+    width: 75%;
+}
+
+li {
+    margin-bottom: 15px;
+}
+
+input {
+    margin: 5px;
+}
+
+textarea, select, input {
+    margin-top: 10px;
+}
+
+#submit {
+    font-size: 20pt;
+}

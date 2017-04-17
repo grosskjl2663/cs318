@@ -19,6 +19,7 @@ table {
     border-spacing: 0;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 20px;
 }
 
 td {
@@ -77,6 +78,9 @@ nav ul {
 .label ul li a {
     text-decoration: none;
     color: white;
+}
+
+.label ul li {
     display: block;
     border-bottom-width: 1px;
     border-bottom-style: solid;
@@ -84,7 +88,11 @@ nav ul {
     padding: 3px;
 }
 
-.label ul li a:hover {
+.label ul li:last-of-type {
+    border-bottom: none;
+}
+
+.label ul li:hover {
     background-color: lightgrey;
 }
 
@@ -115,6 +123,4 @@ header div ul li {
     
     #lines {
         display: inline-block;
-    
     }
-}
