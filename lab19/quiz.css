@@ -19,6 +19,11 @@ textarea, select, input {
     margin-top: 10px;
 }
 
+select, textarea {
+    font-size: 12pt;
+    padding: 5px;
+}
+
 #submit {
-    font-size: 20pt;
+    font-size: 30pt;
 }
