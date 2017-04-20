@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+body {
+    background-color: yellow;
+    color: antiquewhite;
+}
+
+input {
+    margin: 5px;
+    float: right;
+}
+
+input:hover {
+    transform: scale(8);
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+}
+
+label {
+    font-size: 25pt;
+    float: right;
+}
+
+#submit {
+    background-color: blue;
+    color: blueviolet;
+    font-size: 20px;
+}
