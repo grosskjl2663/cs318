@@ -1,62 +1,130 @@
-* {
-    box-sizing: border-box;
-    font-family: sans-serif;
+#container2 {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffe5ff;
+    width: 75%;
+    height: auto;
+    padding: 10px;
 }
 
-ul {
-    list-style: none;
-    background-color: darkblue;
+.upcontainer {
+    width: 100%;
+    height: auto;
 }
 
-nav ul li:first-of-type {
-    border-left: none;
-    
+.upcontainer img {
+    width: 25%;
+    float: left;
+    margin: 15px;
 }
 
-nav ul li {
-    display: inline-block;
+#title2 {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    margin: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+}
+
+#filter {
+    padding: 15px;
+    color: black;
     font-size: 15pt;
-    border-left-color: white;
-    border-left-width: 1px;
-    border-left-style: solid;
-    padding: 5px;
+    margin: 0;
 }
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
+.poetry {
+    background-color: #ffe5ff;
+    width: 100%;
+    height: auto;
+    clear: both;
+}
+
+#poem1 {
+    float: left;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#poem2 {
+    float: left;
+    padding-left: 15px;
+    border-left-style: solid;
+    border-left-style: 1px;
+}
+
+.clear {
+    clear: both;
+}
+
+#floatleft {
+    float: left;
+    width: 15%;
+    height: 60em;
 }
 
 #menu {
-    width: 100px;
-    height: 25px;
-    background-color: blue;
+    margin-left: 15px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 125px;
+    height: 35px;
+    background-color: #660066;
     position: relative;
     display: inline-block;
 }
 
+#menu p {
+    margin-top: 0;
+    font-size: 16pt;
+    color: white;
+}
+
 #menu:hover {
     cursor: pointer;
-    background-color: gray;
+    background-color: #330033;
 }
 
 #menu ul {
     position: absolute;
-    top: 10px;
-    padding: 0;
+    top: 35px;
+    left: 0;
+    display: none;
 }
 
 #menu ul li {
     display: block;
     list-style-type: none;
-    background-color: aqua;
+    background-color: #ffb2ff;
     border-bottom-color: white;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    font-size: 14pt;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: left;
+    color: #330033;
+}
+
+#menu ul a {
+    text-decoration: none;
 }
 
 #menu ul li:hover {
-    background-color: black;
+    background-color: #4c004c;
+    color: white;
+}
+
+#menu ul li:last-of-type {
+    border:none;
 }
 
 #menu:hover ul {
@@ -64,6 +132,65 @@ nav ul li a {
 }
 
 .poetry {
-    width: 50%;
-    padding-left: 20px;
+    background-color: #ffe5ff;
+}
+
+.poemtitle {
+    padding: 0;
+}
+
+pre {
+    margin: 0;
+    font-size: 12pt;
+}
+
+@media screen and (max-width: 300em) {
+    
+    .upcontainer {
+        padding: 15px;
+    }
+    
+    .upcontainer img {
+        display: inline;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    .upcontainer p {
+        font-size: 14pt;
+    }
+    
+    #floatleft {
+        float: none;
+        width: 100%;
+        height: auto;
+    }
+    
+    #filter {
+        display: none;
+    }
+    
+    #menu {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-bottom: 100px;
+    }
+    
+    #menu ul {
+        width: 100%;
+    }
+    
+    #menu ul li {
+        text-align: center;
+    }
+    
+    #poem1 pre, #poem2 pre {
+        display: inline-block;
+        width: 50%;
+        font-size: 10pt;
+    }
+    
+
 }
