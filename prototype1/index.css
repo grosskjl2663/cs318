@@ -7,24 +7,19 @@ body {
     background-color: #330033;
 }
 
-main {
-    width: 
-}
-
 #container1 {
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    width: 85%;
 }
 
 #container2 {
     margin-left: auto;
     margin-right: auto;
     background-color: #ffe5ff;
-    width: 75%;
+    width: 85%;
     height: auto;
     padding: 10px;
-    overflow: auto;
 }
 
 #container3 {
@@ -38,7 +33,7 @@ main {
     border-top-color: #330033;
     background-color: #660066;
     color: white;
-    width: 75%;
+    width: 85%;
     clear: both;
 }
 
@@ -113,8 +108,13 @@ a {
     right: 0;
     text-decoration: none;
     padding: 15px;
-    font-size: 95%;
+    font-size: 75%;
     text-shadow: 5px 5px 5px grey;
+}
+
+hr {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 @media screen and (min-width: 20em) {

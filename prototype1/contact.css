@@ -1,11 +1,11 @@
-h2 {
-    margin: 5px;
+#container2 {
+    overflow: auto;
 }
 
 #contact {
     margin: 0;
-    padding-top: 15px;
     padding-left: 15px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 
@@ -16,22 +16,27 @@ h2 {
     height: 100%;
     float: left;
     background-color: #ffe5ff;
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-right-color: #330033;
 }
 
 #leftcolumn img {
     width: 100%;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 10px;
 }
 
 #rightcolumn {
     padding-top: 5px;
     padding-left: 10px;
-    height: 435px;
+    height: auto;
     width: 70%;
     float: right;
     background-color: #ffe5ff;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 24pt;
 }
 
 form {
@@ -43,12 +48,17 @@ form {
     border-width: 1px;
     border-color: #330033;
     border-radius: 15px;
+    box-shadow: 8px 8px 10px grey;
 }
 
 label, input, textarea {
     padding: 5px;
     font-size: 14pt;
     margin: 5px;
+}
+
+input {
+    width: 50%;
 }
 
 label {
@@ -71,11 +81,16 @@ input:nth-of-type(3) {
     color: white;
     padding: 10px;
     clear: both;
+    border: none;
 }
 
 #submit:hover {
     background-color: #660066;
     color: white;
+    position: relative;
+    left: 3px;
+    top: 3px;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 60em) {
@@ -89,6 +104,6 @@ input:nth-of-type(3) {
     #rightcolumn {
         float: none;
         width: 100%;
+        height: auto;
     }
-    
 }

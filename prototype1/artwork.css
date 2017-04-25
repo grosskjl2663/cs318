@@ -2,7 +2,7 @@
     margin-left: auto;
     margin-right: auto;
     background-color: #ffe5ff;
-    width: 75%;
+    width: 85%;
     height: 1000px;
     padding: 10px;
     overflow: auto;
@@ -12,11 +12,8 @@ h2 {
     margin: 0;
     padding-top: 15px;
     padding-left: 15px;
-    padding-bottom: 10px;
-}
-
-#artwork {
-    float: left;
+    padding-bottom: 20px;
+    font-size: 28pt;
 }
 
 #filter {
@@ -25,11 +22,6 @@ h2 {
     font-size: 15pt;
     margin: 0;
     float: right;
-}
-
-#leftcolumn {
-    width: 100%;
-    background-color: #ffe5ff;
 }
 
 #menu {
@@ -43,6 +35,7 @@ h2 {
     position: relative;
     display: inline-block;
     float: right;
+    box-shadow: 5px 5px 5px grey;
 }
 
 #menu p {
@@ -61,13 +54,14 @@ h2 {
     top: 35px;
     left: 0;
     display: none;
+    box-shadow: 5px 5px 5px grey;
 }
 
 #menu ul li {
     display: block;
     list-style-type: none;
     background-color: #ffb2ff;
-    border-bottom-color: white;
+    border-bottom-color: black;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     font-size: 14pt;
@@ -96,87 +90,56 @@ h2 {
 }
 
 #gallery {
-    height: 50%;
-    width: 100%;
-    position: relative;
-    top: 35px;
-}
-
-figure {
-    position: absolute;
-    text-align: center;
-    margin: 0;
     width: 25%;
     float: left;
 }
 
 #gallery .thumbnail {
-    width: 100px;
-    height: 100px;
-    display: inline-block;
+    width: 40%;
+    height: auto;
+    box-shadow: 5px 5px 10px grey;
 }
 
 #gallery ul {
     width: 100%;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    background-color: white;
 }
 
 #gallery li {
     display: inline;
-    float: left;
-    padding-top: 5px;
-    padding-right: 5px;
+    padding: 5px;
 }
 
 #gallery img {
     border: none;
 }
 
-#gallery .fullsize {
-    height: 100%;
-    width: 70%;
-    float: left;
-}
-
-#gallery a {
-    text-decoration: none;
-    color: #4c004c;
-}
-
-#gallery .label {
+.label {
     width: 75%;
-    display: none;
-}
-
-#gallery a .label {
-    float: left;
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 150px;
-    opacity: 1;
+    height: 65%;
     background-color: #4c004c;
-    width: 300%;
+    box-shadow: 10px 10px 10px grey;
+    float: right;
 }
 
-#gallery li p {
+.label img {
+    height: 100%;
+    width: auto;
+}
+
+.statement {
+    width: 35%;
     color: white;
-    font-size: 10pt;
-    text-align: left;
-    font-style: italic;
-    width: 30%;
+    padding-right: 15px;
     float: right;
-    padding: 20px;
-    margin: 0;
 }
 
 @media screen and (max-width: 60em) {
     
     #leftcolumn {
         width: 100%;
-        height: 150px;
+        height: 10%;
         font-size: 16pt;
         text-align: center;
     }
@@ -199,10 +162,14 @@ figure {
     }
     
     #gallery {
-        padding: 20px;
-        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 25%;
+    }
+    
+    #gallery, .label {
         position: relative;
-        top: 50px;
+        top: 100px;
     }
     
     #gallery .thumbnail {
@@ -210,28 +177,22 @@ figure {
         width: 100%;
         height: auto;
     }
-
-    #gallery .fullsize {
-        width: 100%;
-    }
     
-    #gallery span {
-        width: 300px;
-    }
-    
-    #gallery a:hover span {
-        left: 275px;
-    }
-    
-    #gallery span img {
-        float: none;
-    }
-    
-    #gallery li {
+    .label {
+        width: 75%;
         display: block;
     }
     
-    #gallery li p {
-        font-size: 14pt;
+    .label img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    .statement {
+        float: none;
+        width: 100%;
+        background-color: #660066;
+        padding: 15px;
     }
 }
