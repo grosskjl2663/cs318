@@ -1,21 +1,24 @@
+#container2 {
+    overflow: hidden;
+}
+
 .page {
     height: 300px;
-    width: 97%;
+    width: 100%;
     background-size: cover;
     display: none;
-    margin: 15px;
 }
 
 #page1 {
-    background-image: url(Images/roosterwork.jpg)
+    background-image: url("Pager/dragoneye.jpg");
 }
 
 #page2 {
-    background-image: url(Images/Biography.jpg)
+    background-image: url("Pager/rooster.jpg");
 }
 
 #page3 {
-    background-image: url(Images/fireflies.png)
+    background-image: url("Pager/group.jpg");
 }
 
 input[type="radio"]:checked + .page {
@@ -47,47 +50,42 @@ label {
     text-align: center;
     font-size: 20pt;
     padding: 20px;
+    margin-bottom: 0;
     text-shadow: 5px 5px 5px grey;
 }
 
 h2 {
     margin-bottom: 0;
     margin-top: 0;
-    padding-left: 15px;
     font-size: 24pt;
-}
-
-img {
-    border-radius: 15px;
 }
 
 #duddeck {
     width: 35%;
-    margin: 15px;
+    margin-top: 15px;
     margin-right: 20px;
     margin-bottom: 15px;
     float: left;
-    box-shadow: 8px 8px 10px grey;
+    box-shadow: -8px 8px 8px grey;
 }
 
 #floral {
     float: right;
-    width: 20%;
-    margin: 15px;
-    margin-right: 20px;
+    width: 28%;
+    margin-top: 15px;
+    margin-left: 20px;
     margin-bottom: 15px;
-    box-shadow: -8px 8px 10px grey;
-}
-
-p {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-bottom: 0;
+    box-shadow: 8px 8px 8px grey;
 }
 
 #events {
+    width: 55%;
     float: left;
-    width: 45%;
+}
+
+#events #header {
+    width: 100%;
+    margin-top: 10px;
 }
 
 #events p {
@@ -97,8 +95,8 @@ p {
 #events #calendar {
     width: 25%;
     background-color: #4c004c;
-    margin-left: 15px;
     margin-top: 10px;
+    margin-right: 15px;
     font-size: 28pt;
     text-align: center;
     float: left;
@@ -112,24 +110,27 @@ p {
 }
 
 #events #event {
-    width: 70%;
-    float: right;
     font-size: 14pt;
 }
 
 #events #challenge {
     clear: both;
-    padding-top: 10px;
+    margin-top: 30px;
+}
+
+#facebook {
+    float: right;
 }
 
 @media screen and (max-width: 60em) {
     
     #container2 {
-        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     
     .page {
-        visibility: hidden;
+        display: none;
         width: 0;
         height: 0;
     }
@@ -139,7 +140,9 @@ p {
     }
     
     #quote {
+        width: 100%;
         margin-top: 0;
+        margin-left: 0;
     }
     
     h2 {
@@ -152,11 +155,11 @@ p {
         padding-top: 15px;
     }
     
-    img {
+    #duddeck {
+        width: 100%;
+        float: none;
         margin-top: 15px;
         margin-left: 0;
-        margin-bottom: 15px;
-        width: 100%;
     }
     
     #floral {
@@ -166,9 +169,13 @@ p {
         margin-right: 15px;
     }
     
-     p {
+    p {
         padding: 0;
         font-size: 14pt;
+    }
+    
+    p:first-of-type {
+        
     }
     
     #events {
@@ -192,7 +199,7 @@ p {
         width: 100%;
     }
     
-    iframe {
+    #facebook {
         width: 100%;
     }
 

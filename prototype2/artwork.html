@@ -2,12 +2,39 @@
 <html>
 <head>
     <title>Mai Chao's Art & Writing - Artwork</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="artwork.css">
+    <link rel="stylesheet" type="text/css" href="Styles/index.css">
+    <link rel="stylesheet" type="text/css" href="Styles/artwork.css">
     <script>
         function explode(img) {
             var exploded = document.getElementById('exploded');
             exploded.src = img.src;
+            
+            var statement = document.getElementById('statement');
+            
+            console.log(img.src);
+            if (img.id == 'women1') {
+                statement.innerHTML = 'Girl carrying a traditional bamboo back basket in a rice field. She is contemplating and thinking about her bright future.';
+            } else if (img.id == 'daughters1') {
+                statement.innerHTML = 'Girls are the pride and joy of many families. Often, the family’s wealth is shown through the adornment of clothing and jewelry on their daughters.';
+            } else if (img.id == 'mothersdaughters1') {
+                statement.innerHTML = 'Mother and daughters have always enjoyed time in the garden before separating ways. Daughters learn from mothers prior to leaving and starting their own families.';
+            } else if (img.id == 'mothersdaughters2') {
+                statement.innerHTML = 'Drinking and bathing water must be carried from creeks into homes for families to use. Life is simple, carefree, and hard.';
+            } else if (img.id == 'daughters2') {
+                statement.innerHTML = 'Hmong girls in Thailand cut their hair short to fit in with Thai society, but they hold on tightly to their cultural roots. ';
+            } else if (img.id == 'daughters3') {
+                statement.innerHTML = 'Older daughters share a great responsibility of helping out around the house. They also take care of young siblings by carrying them on their backs while working.';
+            } else if (img.id == 'daughters4') {
+                statement.innerHTML = 'Strong, resilient, and brave daughter.';
+            } else if (img.id == 'women2') {
+                statement.innerHTML = 'Gathering logs to burn under the hearth for cooking.';
+            } else if (img.id == 'other1') {
+                statement.innerHTML = '"Dragon Eye" 12x24, Oil<br>Imagine yourself looking up and seeing this view above your head. Mother Nature is the truest artist amongst us.<br>Art inspired by Antelope Canyon.';
+            } else if (img.id == 'other2') {
+                statement.innerHTML = '"Wildflowers and Mountains" 24x24, Mixed Media';
+            } else {
+                statement.innerHTML = 'default';
+            }
         }
     </script>
 </head>
@@ -33,7 +60,8 @@
                     <ul>
                         <a href="womensartworks.html"><li>Women</li></a>
                         <a href="daughtersartworks.html"><li>Daughters</li></a>
-                        <a href="mothersartworks.html"><li>Mothers & Children</li></a>
+                        <a href="mothersartworks.html"><li>Mothers & Daughters</li></a>
+                        <a href="otherartworks.html"><li>Other</li></a>
                         </ul>
                 </div>
                 </h2>
@@ -42,53 +70,114 @@
             <div id="gallery">
                 <ul>
                     <li>
-                        <a href="Images/Daughters/FullSizeRender.jpg">
-                        <img src="Images/Daughters/FullSizeRender.jpg" class="thumbnail" alt="Daughter 1" onmouseover="explode(this)">
+                        <a href="Images/Women/FullSizeRender-1.jpg">
+                        <img src="Images/Women/FullSizeRender-1.jpg" class="thumbnail" alt="Women 1" onmouseover="explode(this)" id="women1">
                         </a>
                     </li>
                     <li>
                         <a href="Images/Daughters/FullSizeRender-1.jpg">
-                        <img src="Images/Daughters/FullSizeRender-1.jpg" class="thumbnail" alt="Daughter 2" onmouseover="explode(this)">
+                        <img src="Images/Daughters/FullSizeRender-1.jpg" class="thumbnail" alt="Daughter 1" onmouseover="explode(this)" id="daughters1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/mothersdaughters/FullSizeRender-1.jpg">
+                        <img src="Images/mothersdaughters/FullSizeRender-1.jpg" class="thumbnail" alt="Mothers & Daughters 3" onmouseover="explode(this)" id="mothersdaughters1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/mothersdaughters/FullSizeRender-2.jpg">
+                        <img src="Images/mothersdaughters/FullSizeRender-2.jpg" class="thumbnail" alt="Mothers & Daughters 4" onmouseover="explode(this)" id="mothersdaughters2">
                         </a>
                     </li>
                     <li>
                         <a href="Images/Daughters/FullSizeRender-2.jpg">
-                        <img src="Images/Daughters/FullSizeRender-2.jpg" class="thumbnail" alt="Daughter 3" onmouseover="explode(this)">
+                        <img src="Images/Daughters/FullSizeRender-2.jpg" class="thumbnail" alt="Daughter 2" onmouseover="explode(this)" id="daughters2">
                         </a>
                     </li>
                     <li>
                         <a href="Images/Daughters/FullSizeRender-3.jpg">
-                        <img src="Images/Daughters/FullSizeRender-3.jpg" class="thumbnail" alt="Daughter 4" onmouseover="explode(this)">
+                        <img src="Images/Daughters/FullSizeRender-3.jpg" class="thumbnail" alt="Daughter 3" onmouseover="explode(this)" id="daughters3">
                         </a>
                     </li>
                     <li>
                         <a href="Images/Daughters/FullSizeRender-4.jpg">
-                        <img src="Images/Daughters/FullSizeRender-4.jpg" class="thumbnail" alt="Daughter 5" onmouseover="explode(this)">
+                        <img src="Images/Daughters/FullSizeRender-4.jpg" class="thumbnail" alt="Daughter 4" onmouseover="explode(this)" id="daughters4">
                         </a>
                     </li>
                     <li>
-                        <a href="Images/Daughters/FullSizeRender-5.jpg">
-                        <img src="Images/Daughters/FullSizeRender-5.jpg" class="thumbnail" alt="Daughter 6" onmouseover="explode(this)">
+                        <a href="Images/Women/FullSizeRender-2.jpg">
+                        <img src="Images/Women/FullSizeRender-2.jpg" class="thumbnail" alt="Women 2" onmouseover="explode(this)" id="women2">
                         </a>
                     </li>
                     <li>
-                        <a href="Images/Daughters/FullSizeRender-6.jpg">
-                        <img src="Images/Daughters/FullSizeRender-6.jpg" class="thumbnail" alt="Daughter 7" onmouseover="explode(this)">
+                        <a href="Images/other/dragoneye.jpg">
+                        <img src="Images/other/dragoneye.jpg" class="thumbnail" alt="Dragon Eye" onmouseover="explode(this)" id="other1">
                         </a>
                     </li>
                     <li>
-                        <a href="Images/Daughters/FullSizeRender-7.jpg">
-                        <img src="Images/Daughters/FullSizeRender-7.jpg" class="thumbnail" alt="Daughter 8" onmouseover="explode(this)">
+                        <a href="Images/other/wildflowersandmountains.jpg">
+                        <img src="Images/other/wildflowersandmountains.jpg" class="thumbnail" alt="Wildflowers and Mountains" onmouseover="explode(this)" id="other2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster1.jpg">
+                        <img src="Images/roosterillustrations/rooster1.jpg" class="thumbnail" alt="Brave Rooster 1" onmouseover="explode(this)" id="roosterillustration1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster2.jpg">
+                        <img src="Images/roosterillustrations/rooster2.jpg" class="thumbnail" alt="Brave Rooster 2" onmouseover="explode(this)" id="roosterillustration2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster3.jpg">
+                        <img src="Images/roosterillustrations/rooster3.jpg" class="thumbnail" alt="Brave Rooster 3" onmouseover="explode(this)" id="roosterillustration3">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster4.jpg">
+                        <img src="Images/roosterillustrations/rooster4.jpg" class="thumbnail" alt="Brave Rooster 4" onmouseover="explode(this)" id="roosterillustration4">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster5.jpg">
+                        <img src="Images/roosterillustrations/rooster5.jpg" class="thumbnail" alt="Brave Rooster 5" onmouseover="explode(this)" id="roosterillustration5">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster6.jpg">
+                        <img src="Images/roosterillustrations/rooster6.jpg" class="thumbnail" alt="Brave Rooster 6" onmouseover="explode(this)" id="roosterillustration6">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster7.jpg">
+                        <img src="Images/roosterillustrations/rooster7.jpg" class="thumbnail" alt="Brave Rooster 7" onmouseover="explode(this)" id="roosterillustration7">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster8.jpg">
+                        <img src="Images/roosterillustrations/rooster8.jpg" class="thumbnail" alt="Brave Rooster 8" onmouseover="explode(this)" id="roosterillustration8">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster9.jpg">
+                        <img src="Images/roosterillustrations/rooster9.jpg" class="thumbnail" alt="Brave Rooster 9" onmouseover="explode(this)" id="roosterillustration9">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster10.jpg">
+                        <img src="Images/roosterillustrations/rooster10.jpg" class="thumbnail" alt="Brave Rooster 10" onmouseover="explode(this)" id="roosterillustration10">
                         </a>
                     </li>
                 </ul>
             </div>
             <div class="label">
-                            <img src="Images/FullSizeRender-8.jpg" class="fullsize" alt="Daughter 1" id="exploded">
-                            <span>Lorem ipsum dolor sit amet, regione imperdiet his ea, eos ea tale voluptatum. Sint ridens reprehendunt id quo, iudico prompta mei ea, ut primis graeci deterruisset vim.</span>
+                            <img src="" class="fullsize" id="exploded">
+                            <span id="statement"></span>
             </div>
             <br class="clear">
         <a href="#title" id="return">Back to top &uarr;</a>
+        <a href="#title" id="return2">&uarr;</a>
     </main>
     <div id="container3">
         <footer>

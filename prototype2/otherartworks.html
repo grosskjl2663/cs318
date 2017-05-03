@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mai Chao's Art & Writing - Artwork</title>
+    <link rel="stylesheet" type="text/css" href="Styles/index.css">
+    <link rel="stylesheet" type="text/css" href="Styles/artwork.css">
+    <script>
+        function explode(img) {
+            var exploded = document.getElementById('exploded');
+            exploded.src = img.src;
+            
+            var statement = document.getElementById('statement');
+            
+            console.log(img.src);
+            if (img.id == 'other1 horizontal') {
+                statement.innerHTML = '"Dragon Eye" 12x24, Oil<br><br>Imagine yourself looking up and seeing this view above your head. Mother Nature is the truest artist amongst us.<br><br>Art inspired by Antelope Canyon.';
+            } else if (img.id == 'other2') {
+                statement.innerHTML = '"Wildflowers and Mountains" 24x24, Mixed Media';
+            } else {
+                statement.innerHTML = 'default';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="container1">
+        <header>
+            <h1 id="title">Mai Chao's Art & Writing</h1>
+        </header>
+        <nav>
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li><li><a href="artwork.html">Artwork</a></li><li><a href="writing.html">Writing</a></li><li><a href="communityprojects.html">Community Projects</a></li><li><a href="fireflies.html">Gathering Fireflies</a></li><li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div id="filler"></div>
+        <div id="container2">
+            <div id="leftcolumn">
+                <h2 id="artwork">Artwork
+                <p id="filter">Filter by:</p>
+                <div id="menu">
+                    <p>Themes &#9660;</p>
+                    <ul>
+                        <a href="womensartworks.html"><li>Women</li></a>
+                        <a href="daughtersartworks.html"><li>Daughters</li></a>
+                        <a href="mothersartworks.html"><li>Mothers & Daughters</li></a>
+                        <a href="othersartworks.html"><li>Other</li></a>
+                        </ul>
+                </div>
+                </h2>
+            </div>
+            <hr></hr>
+            <div id="gallery">
+                <ul>
+                    <li>
+                        <a href="Images/other/dragoneye.jpg">
+                        <img src="Images/other/dragoneye.jpg" class="thumbnail" alt="Dragon Eye" onmouseover="explode(this)" id="other1 horizontal">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/other/wildflowersandmountains.jpg">
+                        <img src="Images/other/wildflowersandmountains.jpg" class="thumbnail" alt="Wildflowers and Mountains" onmouseover="explode(this)" id="other2 vertical">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster1.jpg">
+                        <img src="Images/roosterillustrations/rooster1.jpg" class="thumbnail" alt="Brave Rooster 1" onmouseover="explode(this)" id="roosterillustration1 vertical">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster2.jpg">
+                        <img src="Images/roosterillustrations/rooster2.jpg" class="thumbnail" alt="Brave Rooster 2" onmouseover="explode(this)" id="roosterillustration2 horizontal">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster3.jpg">
+                        <img src="Images/roosterillustrations/rooster3.jpg" class="thumbnail" alt="Brave Rooster 3" onmouseover="explode(this)" id="roosterillustration3 horizontal">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster4.jpg">
+                        <img src="Images/roosterillustrations/rooster4.jpg" class="thumbnail" alt="Brave Rooster 4" onmouseover="explode(this)" id="roosterillustration4 horizontal">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster5.jpg">
+                        <img src="Images/roosterillustrations/rooster5.jpg" class="thumbnail" alt="Brave Rooster 5" onmouseover="explode(this)" id="roosterillustration5 vertical">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster6.jpg">
+                        <img src="Images/roosterillustrations/rooster6.jpg" class="thumbnail" alt="Brave Rooster 6" onmouseover="explode(this)" id="vertical roosterillustration6">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster7.jpg">
+                        <img src="Images/roosterillustrations/rooster7.jpg" class="thumbnail" alt="Brave Rooster 7" onmouseover="explode(this)" id="vertical roosterillustration7">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster8.jpg">
+                        <img src="Images/roosterillustrations/rooster8.jpg" class="thumbnail" alt="Brave Rooster 8" onmouseover="explode(this)" id="vertical roosterillustration8">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster9.jpg">
+                        <img src="Images/roosterillustrations/rooster9.jpg" class="thumbnail" alt="Brave Rooster 9" onmouseover="explode(this)" id="vertical roosterillustration9">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/roosterillustrations/rooster10.jpg">
+                        <img src="Images/roosterillustrations/rooster10.jpg" class="thumbnail" alt="Brave Rooster 10" onmouseover="explode(this)" id="vertical roosterillustration10">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="label">
+                            <img src="" class="fullsize" id="exploded">
+                            <span id="statement"></span>
+            </div>
+            <br class="clear">
+        <a href="#title" id="return">Back to top &uarr;</a>
+        <a href="#title" id="return2">&uarr;</a>
+    </main>
+    <div id="container3">
+        <footer>
+            Copyright © 2017 Mai Chao Duddeck & Joe Grosskreutz 
+        </footer>
+    </div>
+</body>
+</html>

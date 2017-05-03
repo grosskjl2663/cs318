@@ -4,14 +4,14 @@
 
 #contact {
     margin: 0;
-    padding-left: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 #leftcolumn {
     margin: 0;
-    padding: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
     width: 30%;
     height: 100%;
     float: left;
@@ -40,7 +40,7 @@ h2 {
 }
 
 form {
-    width: 98%;
+    width: 100%;
     background-color: #330033;
     padding: 10px;
     font-size: 14pt;

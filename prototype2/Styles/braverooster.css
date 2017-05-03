@@ -1,0 +1,36 @@
+.upcontainer .enlargedillustrations {
+    width: 30%;
+    padding: 15px;
+}
+
+#right, #left {
+    margin-bottom: 15px;
+}
+
+#right {
+    float: right;
+    margin-left: 15px;
+    box-shadow: 8px 8px 8px grey;
+}
+
+#left {
+    float: left;
+    margin-right: 15px;
+    box-shadow: -8px 8px 8px grey;
+}
+
+.illustrations {
+    width: 5%;
+    margin-left: 40px;
+}
+
+@media screen and (max-width: 60em) {
+    .upcontainer .enlargedillustrations {
+        width: 100%;
+    }
+    
+    #right, #left {
+        float: none;
+        margin: 0;
+    }
+}

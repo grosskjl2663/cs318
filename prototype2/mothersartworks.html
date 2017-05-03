@@ -2,8 +2,25 @@
 <html>
 <head>
     <title>Mai Chao's Art & Writing - Artwork</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <link rel="stylesheet" type="text/css" href="artwork.css">
+    <link rel="stylesheet" type="text/css" href="Styles/index.css">
+    <link rel="stylesheet" type="text/css" href="Styles/artwork.css">
+    <script>
+        function explode(img) {
+            var exploded = document.getElementById('exploded');
+            exploded.src = img.src;
+            
+            var statement = document.getElementById('statement');
+            
+            console.log(img.src);
+            if (img.id == 'mothersdaughters1') {
+                statement.innerHTML = 'Mother and daughters have always enjoyed time in the garden before separating ways. Daughters learn from mothers prior to leaving and starting their own families.';
+            } else if (img.id == 'mothersdaughters2') {
+                statement.innerHTML = 'Drinking and bathing water must be carried from creeks into homes for families to use. Life is simple, carefree, and hard.';
+            } else {
+                statement.innerHTML = 'default';
+            }
+        }
+    </script>
 </head>
 <body>
     <div id="container1">
@@ -19,81 +36,42 @@
     <main>
         <div id="filler"></div>
         <div id="container2">
-            <h2>Artwork</h2>
-            <p id="filter">Filter by:</p>
-            <div id="floatleft">
+            <div id="leftcolumn">
+                <h2 id="artwork">Artwork
+                <p id="filter">Filter by:</p>
                 <div id="menu">
                     <p>Themes &#9660;</p>
                     <ul>
                         <a href="womensartworks.html"><li>Women</li></a>
                         <a href="daughtersartworks.html"><li>Daughters</li></a>
-                        <a href="mothersartworks.html"><li>Mothers & Children</li></a>
-                    </ul>
+                        <a href="mothersartworks.html"><li>Mothers & Daughters</li></a>
+                        <a href="otherartworks.html"><li>Other</li></a>
+                        </ul>
                 </div>
+                </h2>
             </div>
+            <hr></hr>
             <div id="gallery">
-                <figure>
                 <ul>
                     <li>
-                        <a href="Images/Daughters/FullSizeRender.jpg">
-                        <img src="Images/Daughters/FullSizeRender.jpg" class="thumbnail" alt="Daughter 1">
-                        <span>
-                            <img src="Images/Daughters/FullSizeRender.jpg" class="fullsize" alt="Daughter 1"><br>
-                            <p>Lorem ipsum dolor sit amet, regione imperdiet his ea, eos ea tale voluptatum. Sint ridens reprehendunt id quo, iudico prompta mei ea, ut primis graeci deterruisset vim.</p>
-                        </span></a>
+                        <a href="Images/mothersdaughters/FullSizeRender-1.jpg">
+                        <img src="Images/mothersdaughters/FullSizeRender-1.jpg" class="thumbnail" alt="Mothers & Daughters 1" onmouseover="explode(this)" id="mothersdaughters1">
+                        </a>
                     </li>
                     <li>
-                        <a href="Images/Daughters/FullSizeRender-1.jpg">
-                        <img src="Images/Daughters/FullSizeRender-1.jpg" class="thumbnail" alt="Daughter 2">
-                        <span>
-                            <img src="Images/Daughters/FullSizeRender-1.jpg" class="fullsize" alt="Daughter 2"><br>
-                            <p>Lorem ipsum dolor sit amet, regione imperdiet his ea, eos ea tale voluptatum. Sint ridens reprehendunt id quo, iudico prompta mei ea, ut primis graeci deterruisset vim.</p>
-                        </span></a>
-                    </li>
-                    <li>
-                        <a href="Images/Daughters/FullSizeRender-2.jpg">
-                        <img src="Images/Daughters/FullSizeRender-2.jpg" class="thumbnail" alt="Daughter 3">
-                        <span>
-                            <img src="Images/Daughters/FullSizeRender-2.jpg" class="fullsize" alt="Daughter 3"><br>
-                            <p>Lorem ipsum dolor sit amet, regione imperdiet his ea, eos ea tale voluptatum. Sint ridens reprehendunt id quo, iudico prompta mei ea, ut primis graeci deterruisset vim.</p>
-                        </span></a>
-                    </li>
-                    <li>
-                        <a href="Images/Daughters/FullSizeRender-3.jpg">
-                        <img src="Images/Daughters/FullSizeRender-3.jpg" class="thumbnail" alt="Daughter 4">
-                        <span>
-                            <img src="Images/Daughters/FullSizeRender-3.jpg" class="fullsize" alt="Daughter 4"><br>
-                            <p>Lorem ipsum dolor sit amet, regione imperdiet his ea, eos ea tale voluptatum. Sint ridens reprehendunt id quo, iudico prompta mei ea, ut primis graeci deterruisset vim.</p>
-                        </span></a>
-                    </li>
-                    <li>
-                        <a href="Images/Daughters/FullSizeRender-5.jpg">
-                        <img src="Images/Daughters/FullSizeRender-5.jpg" class="thumbnail" alt="Daughter 5">
-                        <span>
-                            <img src="Images/Daughters/FullSizeRender-5.jpg" class="fullsize" alt="Daughter 5"><br>
-                            <p>Lorem ipsum dolor sit amet, regione imperdiet his ea, eos ea tale voluptatum. Sint ridens reprehendunt id quo, iudico prompta mei ea, ut primis graeci deterruisset vim.</p>
-                        </span></a>
-                    </li>
-                    <li>
-                        <a href="Images/Daughters/FullSizeRender-5.jpg">
-                        <img src="Images/Daughters/FullSizeRender-5.jpg" class="thumbnail" alt="Daughter 6">
-                        <span>
-                            <img src="Images/Daughters/FullSizeRender-5.jpg" class="fullsize" alt="Daughter 6"><br>
-                            <p>Lorem ipsum dolor sit amet, regione imperdiet his ea, eos ea tale voluptatum. Sint ridens reprehendunt id quo, iudico prompta mei ea, ut primis graeci deterruisset vim.</p>
-                        </span></a>
-                    </li>
-                    <li>
-                        <a href="Images/Daughters/FullSizeRender-6.jpg">
-                        <img src="Images/Daughters/FullSizeRender-6.jpg" class="thumbnail" alt="Daughter 7">
-                        <span>
-                            <img src="Images/Daughters/FullSizeRender-6.jpg" class="fullsize" alt="Daughter 7"><br>
-                            <p>Lorem ipsum dolor sit amet, regione imperdiet his ea, eos ea tale voluptatum. Sint ridens reprehendunt id quo, iudico prompta mei ea, ut primis graeci deterruisset vim.</p>
-                        </span></a>
+                        <a href="Images/mothersdaughters/FullSizeRender-2.jpg">
+                        <img src="Images/mothersdaughters/FullSizeRender-2.jpg" class="thumbnail" alt="Mothers & Daughters 2" onmouseover="explode(this)" id="mothersdaughters2">
+                        </a>
                     </li>
                 </ul>
-                </figure>
             </div>
-        </div>
+            <div class="label">
+                            <img src="" class="fullsize" id="exploded">
+                            <span id="statement"></span>
+            </div>
+            <br class="clear">
+        <a href="#title" id="return">Back to top &uarr;</a>
+        <a href="#title" id="return2">&uarr;</a>
     </main>
     <div id="container3">
         <footer>

@@ -1,48 +1,19 @@
-#title2 {
-    margin: 0;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-bottom: 10px;
-}
-
-.upcontainer {
-    width: 100%;
-    height: auto;
-}
-
-.upcontainer #work {
-    margin: 15px;
-    width: 97%;
-}
-
-.upcontainer img {
-    width: 25%;
-    float: left;
-    margin: 15px;
+#container2 {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffe5ff;
+    width: 85%;
+    height: 1000px;
+    padding: 10px;
+    overflow: auto;
 }
 
 h2 {
     margin: 0;
     padding-top: 15px;
     padding-left: 15px;
-    padding-bottom: 10px;
-}
-
-.clear {
-    clear: both;
-}
-
-.poetry {
-    background-color: #ffe5ff;
-    width: 100%;
-    height: auto;
-    clear: both;
-}
-
-#floatleft {
-    float: left;
-    width: 15%;
-    height: 60em;
+    padding-bottom: 20px;
+    font-size: 28pt;
 }
 
 #filter {
@@ -50,6 +21,7 @@ h2 {
     color: black;
     font-size: 15pt;
     margin: 0;
+    float: right;
 }
 
 #menu {
@@ -62,6 +34,7 @@ h2 {
     background-color: #660066;
     position: relative;
     display: inline-block;
+    float: right;
     box-shadow: 5px 5px 5px grey;
 }
 
@@ -88,7 +61,7 @@ h2 {
     display: block;
     list-style-type: none;
     background-color: #ffb2ff;
-    border-bottom-color: white;
+    border-bottom-color: black;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     font-size: 14pt;
@@ -116,51 +89,63 @@ h2 {
     display: block;
 }
 
-.poetry {
+#gallery {
+    width: 20%;
+    float: left;
+    margin-left: 10px;
+}
+
+#gallery .thumbnail {
+    width: 45%;
+    height: auto;
+    box-shadow: 5px 5px 10px grey;
+    margin-bottom: 10px;
+}
+
+#gallery ul {
+    list-style-type: none;
     background-color: #ffe5ff;
+    text-align: left;
 }
 
-.poemtitle {
-    padding: 0;
+#gallery li {
+    display: inline;
+    padding: 5px;
 }
 
-pre {
-    margin: 0;
-    font-size: 12pt;
+#gallery img {
+    border: none;
+    padding: 5px;
 }
 
-#poem1 {
+.label {
+    width: 75%;
+    height: 65%;
+    background-color: white;
+    box-shadow: 10px 10px 10px grey;
+    float: right;
+    margin-right: 15px;
+    padding: 15px;
+}
+
+.label img {
+    height: 100%;
+    width: auto;
     float: left;
-    padding-left: 15px;
-    padding-right: 15px;
+    margin-right: 15px;
 }
 
-#poem2 {
-    float: left;
-    padding-left: 15px;
+.label span {
+    color: black;
 }
 
-@media screen and (max-width: 75em) {
+@media screen and (max-width: 60em) {
     
-    .upcontainer {
-        padding: 15px;
-    }
-    
-    .upcontainer img {
-        display: inline;
+    #leftcolumn {
         width: 100%;
-        margin-left: 0;
-        margin-bottom: 15px;
-    }
-    
-    .upcontainer p {
-        font-size: 14pt;
-    }
-    
-    #floatleft {
-        float: none;
-        width: 100%;
-        height: auto;
+        height: 10%;
+        font-size: 16pt;
+        text-align: center;
     }
     
     #filter {
@@ -169,9 +154,6 @@ pre {
     
     #menu {
         width: 100%;
-        text-align: center;
-        margin-left: 0;
-        margin-bottom: 100px;
     }
     
     #menu ul {
@@ -180,13 +162,32 @@ pre {
     
     #menu ul li {
         text-align: center;
+        font-size: 16pt;
     }
     
-    #poem1 pre, #poem2 pre {
-        display: inline-block;
-        width: 50%;
-        font-size: 10pt;
+    #gallery {
+        padding-right: 15px;
+        width: 25%;
     }
     
 
+    #gallery .thumbnail {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+    }
+    
+    .label {
+        width: 65%;
+        height: auto;
+        display: block;
+    }
+    
+    .label img {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    
 }

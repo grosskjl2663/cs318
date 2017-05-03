@@ -1,11 +1,9 @@
 #upcontainer {
     height: 15%;
-    padding-top: 15px;
 }
 
 h2 {
     margin: 0;
-    padding-left: 15px;
     padding-bottom: 5px;
 }
 
@@ -13,7 +11,6 @@ h2 {
     height: 50%;
     width: 25%;
     float: left;
-    margin-left: 15px;
     margin-right: 20px;
     box-shadow: 5px 5px 10px grey;
 }
@@ -106,7 +103,8 @@ figure {
 #reviews p {
     margin-top: 0;
     margin-bottom: 0;
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-style: italic;
     border-bottom-style: solid;
     border-bottom-width: 1px;
