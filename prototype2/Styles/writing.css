@@ -96,7 +96,7 @@ h2 {
     position: absolute;
     top: 35px;
     left: 0;
-    display: none;
+    display: ;
     box-shadow: 5px 5px 5px grey;
 }
 
@@ -108,10 +108,8 @@ h2 {
     border-bottom-style: solid;
     border-bottom-width: 1px;
     font-size: 14pt;
-    padding-left: 15px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    text-align: left;
+    padding: 5px;
+    text-align: center;
     color: #330033;
 }
 
@@ -121,7 +119,11 @@ h2 {
 
 #menu ul li:hover {
     background-color: #4c004c;
+}
+
+#menu ul li a:hover {
     color: white;
+    width: 100%;
 }
 
 #menu ul li:last-of-type {
