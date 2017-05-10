@@ -41,6 +41,7 @@ h2 {
 }
 
 .page {
+    clear: both;
     height: 300px;
     width: 100%;
     background-size: cover;
