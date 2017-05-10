@@ -12,6 +12,10 @@ p:first-of-type {
     font-size: 20.5pt;
 }
 
+p:last-of-type {
+    font-size: 16pt;
+}
+
 .right {
     float: right;
     width: 35%;

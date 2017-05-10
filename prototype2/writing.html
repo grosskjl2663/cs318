@@ -4,6 +4,22 @@
     <title>Mai Chao's Art & Writing - Writing</title>
     <link rel="stylesheet" type="text/css" href="Styles/index.css">
     <link rel="stylesheet" type="text/css" href="Styles/writing.css">
+    <script>
+        var modal = document.getElementById('modal');
+        
+        var img = document.getElementById('rooster1');
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+        
+        var span = document.getElementsByClassName("exit")[0];
+        
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
 </head>
 <body>
     <div id="container1">
@@ -34,7 +50,11 @@
                 <hr>
                 <h3>Illustrations:</h3>
                 <span>
-                    <img src="Images/roosterillustrations/rooster1.jpg" class="illustrations">
+                    <img src="Images/roosterillustrations/rooster1.jpg" class="illustrations" id="rooster1">
+                    <div class="modal" id="modal1">
+                        <span class="exit" onclick="document.getElementById('modal1').style.display='none'">&times;</span>
+                        <img class="fullsizeillustration" id="img01">
+                    </div>
                     <img src="Images/roosterillustrations/rooster2.jpg" class="illustrations">
                     <img src="Images/roosterillustrations/rooster3.jpg" class="illustrations">
                     <img src="Images/roosterillustrations/rooster4.jpg" class="illustrations">
@@ -44,6 +64,10 @@
                     <img src="Images/roosterillustrations/rooster8.jpg" class="illustrations">
                     <img src="Images/roosterillustrations/rooster9.jpg" class="illustrations">
                     <img src="Images/roosterillustrations/rooster10.jpg" class="illustrations">
+                    <div class="modal" id="modal1">
+                        <span class="exit">&times;</span>
+                        <img class="fullsizeillustration" id="img01">
+                    </div>
                 </span>
             </div>
             <div class="clear"></div>
@@ -55,9 +79,9 @@
                     <div id="menu">
                         <p>Themes &#9660;</p>
                         <ul>
-                            <li><a href="womenspoetry.html">Women</a></li>
-                            <li><a href="daughterspoetry.html">Daughters</a></li>
-                            <li><a href="motherspoetry.html">Mothers & Daughters</a></li>
+                            <li><a href="womenspoetry.html#women">Women</a></li>
+                            <li><a href="daughterspoetry.html#daughters">Daughters</a></li>
+                            <li><a href="motherspoetry.html#mothers">Mothers & Daughters</a></li>
                         </ul>
                     </div>
                 </div>

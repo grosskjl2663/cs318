@@ -2,54 +2,16 @@
     overflow: hidden;
 }
 
-.page {
-    height: 300px;
+#koi {
     width: 100%;
-    background-size: cover;
-    display: none;
-}
-
-#page1 {
-    background-image: url("Pager/dragoneye.jpg");
-}
-
-#page2 {
-    background-image: url("Pager/rooster.jpg");
-}
-
-#page3 {
-    background-image: url("Pager/group.jpg");
-}
-
-input[type="radio"]:checked + .page {
-    display: block;
-}
-
-#controls {
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
-    user-select: none;
-}
-
-input {
-    display: none;
-}
-
-#show1:checked ~ #controls label:nth-child(1), #show2:checked ~ #controls label:nth-child(2), #show3:checked ~ #controls label:nth-child(3) {
-    color: darkslategrey;
-}
-
-label {
-    font-size: 30px;
-    color: black;
-    cursor: pointer;
+    margin: 0;
 }
 
 #quote {
     text-align: center;
     font-size: 20pt;
-    padding: 20px;
+    padding: 10px;
+    margin-top: 0;
     margin-bottom: 0;
     text-shadow: 5px 5px 5px grey;
 }
@@ -76,6 +38,48 @@ h2 {
     margin-left: 20px;
     margin-bottom: 15px;
     box-shadow: 8px 8px 8px grey;
+}
+
+.page {
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    display: none;
+}
+
+#page1 {
+    background-image: url("Pager/dragoneye.jpg");
+}
+
+#page2 {
+    background-image: url("Pager/roosterwork.jpg");
+}
+
+#page3 {
+    background-image: url("Pager/group.jpg");
+}
+
+input[type="radio"]:checked + .page {
+    display: block;
+}
+
+#controls {
+    user-select: none;
+    text-align: center;
+}
+
+input {
+    display: none;
+}
+
+#show1:checked ~ #controls label:nth-child(1), #show2:checked ~ #controls label:nth-child(2), #show3:checked ~ #controls label:nth-child(3) {
+    color: darkslategrey;
+}
+
+label {
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
 }
 
 #events {
@@ -122,7 +126,7 @@ h2 {
     float: right;
 }
 
-@media screen and (max-width: 60em) {
+@media screen and (max-width: 90em) {
     
     #container2 {
         padding-left: 20px;
