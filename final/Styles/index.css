@@ -83,9 +83,15 @@ nav ul li {
     border-left-color: white;
     border-left-width: 1px;
     border-left-style: solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
+
+/*
+nav ul li:first-of-type {
+    border-left-color: white;
+    border-left-width: 1px;
+    border-left-style: solid;
+}
+*/
 
 nav ul li:hover {
     background-color: #4c004c;
@@ -95,6 +101,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     padding: 10px;
+    display: block;
 }
 
 #filler {

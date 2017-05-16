@@ -22,6 +22,10 @@
     box-shadow: -8px 8px 8px grey;
 }
 
+.upcontainer #chapter1 {
+    font-size: 18pt;
+}
+
 .upcontainer #readmore {
     font-size: 16pt;
     font-weight: bold;
@@ -35,8 +39,8 @@
     height: 75px;
     cursor: pointer;
     transition: 0.5s;
-    padding: 5px;
-    box-shadow: 0 0 0 7px #C0C0C0 inset;
+    padding: 10px;
+    box-shadow: 0 0 0 5px #C0C0C0 inset;
 }
 
 .illustrations:hover {
@@ -51,9 +55,14 @@
     clear: both;
 }
 
-.poetry {
+#downcontainer {
     width: 100%;
     height: auto;
+}
+
+#poetrytitle {
+    font-size: 20pt;
+    margin: 15px 0 0 0;
 }
 
 #floatleft {
@@ -70,42 +79,33 @@
 }
 
 #menu {
+    width: 95%;
+}
+
+.poetry {
+    display: inline-block;
     width: 85%;
 }
 
 #poem1, #poem2 {
+    display: inline-block;
+    width: 48%;
     margin-left: 15px;
     float: left;
 }
 
-@media screen and (max-width: 70em) {
-    
-    .upcontainer #illustration {
-        display: inline;
-        width: 100%;
-        margin-left: 0;
-        margin-bottom: 15px;
-    }
-    
-    .upcontainer p {
-        font-size: 14pt;
-    }
-    
-    .upcontainer span {
-        display: none;
-    }
-    
+@media screen and (max-width: 85em) {
     #illustrations {
-        display: none;
-    }
-    
-    hr:nth-of-type(2) {
-        display: none;
+        clear: both;
     }
     
     #floatleft {
         float: none;
         width: 100%;
+    }
+    
+    #poetrytitle {
+        margin-bottom: 15px;
     }
     
     #filter {
@@ -131,11 +131,63 @@
         font-size: 20pt;
     }
     
+    pre {
+        white-space: pre-wrap;
+    }
+    
+    .poetry {
+        width: 100%;
+    }
+    
+    #poem1 {
+        margin: 0;
+        display: block;
+        width: 50%;
+    }
+    
+    #poem2 {
+        float: right;
+        display: block;
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 63em) {
+    
+    .upcontainer #illustration {
+        display: inline;
+        width: 50%;
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+    
+    .upcontainer p {
+        font-size: 14pt;
+    }
+    
+    .upcontainer span {
+        display: none;
+    }
+    
+    #illustrations {
+        display: none;
+    }
+    
+    hr:nth-of-type(2) {
+        display: none;
+    }
+    
     #poem1, #poem2 {
         float: none;
         display: block;
         width: 100%;
         font-size: 14pt;
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 25em) {
+    .upcontainer #illustration {
+        width: 100%;
     }
 }

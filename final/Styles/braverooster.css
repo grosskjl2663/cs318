@@ -19,6 +19,23 @@
     box-shadow: -8px 8px 8px grey;
 }
 
+#readless {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 19.5px;
+    font-weight: bold;
+    color: #4c004c;
+    background-color: #ffe5ff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+#readless:hover {
+    background-color: #4c004c;
+    color: white;
+}
+
 .illustrations {
     height: 100px;
 }

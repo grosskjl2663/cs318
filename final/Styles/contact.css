@@ -1,4 +1,4 @@
-#container2 {
+#container2 #content {
     overflow: auto;
 }
 
@@ -120,12 +120,19 @@ input:nth-of-type(3) {
     
     input, textarea {
         width: 100%;
+        padding: 10px;
+    }
+    
+    textarea {
+        height: 150px;
+        margin-bottom: 0;
     }
     
     #submit {
         width: 100%;
         padding-left: 5px;
         font-size: 13pt;
+        margin-top: 0;
     }
 
 }

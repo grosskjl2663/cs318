@@ -73,6 +73,7 @@ img {
     
     #menu {
         width: 100%;
+        margin-bottom: 15px;
     }
     
     #menu ul {
@@ -80,7 +81,6 @@ img {
     }
     
     #menu ul li {
-        text-align: center;
         font-size: 16pt;
     }
     
