@@ -1,0 +1,177 @@
+#container2 {
+    overflow: hidden;
+}
+
+#koi {
+    width: 100%;
+    margin: 0;
+}
+
+#quote {
+    text-align: center;
+    font-size: 20pt;
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-shadow: 5px 5px 5px grey;
+}
+
+h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 24pt;
+}
+
+#duddeck {
+    width: 35%;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 15px;
+    float: left;
+    box-shadow: -8px 8px 8px grey;
+}
+
+#floral {
+    float: right;
+    width: 28%;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    box-shadow: 8px 8px 8px grey;
+}
+
+.page {
+    clear: both;
+    height: 300px;
+    width: 100%;
+    background-size: cover;
+    display: none;
+}
+
+#page1 {
+    background-image: url("Pager/dragoneye.jpg");
+}
+
+#page2 {
+    background-image: url("Pager/roosterwork.jpg");
+}
+
+#page3 {
+    background-image: url("Pager/group.jpg");
+}
+
+input[type="radio"]:checked + .page {
+    display: block;
+}
+
+#controls {
+    user-select: none;
+    text-align: center;
+}
+
+input {
+    display: none;
+}
+
+#show1:checked ~ #controls label:nth-child(1), #show2:checked ~ #controls label:nth-child(2), #show3:checked ~ #controls label:nth-child(3) {
+    color: darkslategrey;
+}
+
+label {
+    font-size: 40px;
+    color: black;
+    cursor: pointer;
+}
+
+#events {
+    width: 55%;
+    float: left;
+}
+
+#events #header {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#events p {
+    margin-bottom: 5px;
+}
+
+#facebook {
+    float: right;
+}
+
+@media screen and (max-width: 87em) {
+    
+    #events {
+        width: 25%;
+        float: left;
+        margin-bottom: 15px;
+    }
+    
+    #facebook {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 50em) {
+    
+    #container2 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .page {
+        display: none;
+        width: 0;
+        height: 0;
+    }
+    
+    label {
+        display: none;
+    }
+    
+    #quote {
+        width: 100%;
+        margin-top: 0;
+        margin-left: 0;
+    }
+    
+    h2 {
+        margin: 0;
+        padding: 0;
+        font-size: 27pt;
+    }
+    
+    .header {
+        padding-top: 15px;
+    }
+    
+    #duddeck {
+        width: 100%;
+        float: none;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    
+    #floral {
+        float: right;
+        width: 45%;
+        margin-left: 20px;
+        margin-right: 15px;
+    }
+    
+    p {
+        padding: 0;
+        font-size: 14pt;
+    }
+    
+    #events {
+        float: none;
+        width: 100%;
+    }
+    
+    #facebook {
+        width: 100%;
+    }
+}

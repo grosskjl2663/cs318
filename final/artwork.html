@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mai Chao's Art & Writing - Artwork</title>
+    <link rel="stylesheet" type="text/css" href="Styles/index.css">
+    <link rel="stylesheet" type="text/css" href="Styles/artwork.css">
+    <link rel="stylesheet" type="text/css" href="Styles/common.css">
+</head>
+<body>
+    <div id="container1">
+        <header>
+            <h1 id="title">Mai Chao's Art & Writing</h1>
+        </header>
+        <nav>
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li><li><a href="artwork.html">Artwork</a></li><li><a href="writing.html">Writing</a></li><li><a href="communityprojects.html">Community Projects</a></li><li><a href="fireflies.html">Gathering Fireflies</a></li><li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div id="filler"></div>
+        <div id="container2">
+            <div id="header">
+                <h2 id="artwork">Artwork</h2>
+                <div id="filter1">
+                    <p id="filter">Filter by:</p>
+                    <div id="menu">
+                        <p>Themes &#9660;</p>
+                        <ul>
+                            <li><a href="womensartworks.html">Women</a></li>
+                            <li><a href="daughtersartworks.html">Daughters</a></li>
+                            <li><a href="mothersartworks.html">Mothers & Daughters</a></li>
+                            <li><a href="otherartworks.html">Other</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+                    <div class="modal" id="modal1">
+                        <span class="exit" onclick="document.getElementById('modal1').style.display='none'">&times;</span>
+                        <img src="" alt="DEFAULT" class="gallerydisplay" id="img01">
+                        <div id="caption"></div>
+                    </div>
+            <div id="gallery">
+            <img src="Images/Women/FullSizeRender-1.jpg" alt="Girl carrying a traditional bamboo back basket in a rice field. She is contemplating and thinking about her bright future." class="thumbnails" id="women1">
+            <img src="Images/Daughters/FullSizeRender-1.jpg" alt="Girls are the pride and joy of many families. Often, the family’s wealth is shown through the adornment of clothing and jewelry on their daughters." class="thumbnails" id="daughters1">
+            <img src="Images/mothersdaughters/FullSizeRender-1.jpg" alt="Mother and daughters have always enjoyed time in the garden before separating ways. Daughters learn from mothers prior to leaving and starting their own families." class="thumbnails" id="mothersdaughters1">
+            <img src="Images/mothersdaughters/FullSizeRender-2.jpg" alt="Drinking and bathing water must be carried from creeks into homes for families to use. Life is simple, carefree, and hard." class="thumbnails" id="mothersdaughters2">
+            <img src="Images/Daughters/FullSizeRender-2.jpg" alt="Hmong girls in Thailand cut their hair short to fit in with Thai society, but they hold on tightly to their cultural roots." class="thumbnails" id="daughters2">
+            <img src="Images/Daughters/FullSizeRender-3.jpg" alt="Older daughters share a great responsibility of helping out around the house. They also take care of young siblings by carrying them on their backs while working." class="thumbnails" id="daughters3">
+            <img src="Images/Daughters/FullSizeRender-4.jpg" alt="Strong, resilient, and brave daughter." class="thumbnails" id="daughters4">
+            <img src="Images/Women/FullSizeRender-2.jpg" alt="Gathering logs to burn under the hearth for cooking." class="thumbnails" id="women2">
+            <img src="Images/other/dragoneye.jpg" alt="'Dragon Eye' 12x24, Oil<br>Imagine yourself looking up and seeing this view above your head. Mother Nature is the truest artist amongst us.<br>Art inspired by Antelope Canyon." class="thumbnails" id="other1">
+            <img src="Images/other/wildflowersandmountains.jpg" alt="'Wildflowers and Mountains' 24x24, Mixed Media" class="thumbnails" id="other2">
+            <img src="Images/roosterillustrations/rooster1.jpg" class="thumbnails" id="roosterillustration1">
+            <img src="Images/roosterillustrations/rooster2.jpg" class="thumbnails" id="roosterillustration2">
+            <img src="Images/roosterillustrations/rooster3.jpg" class="thumbnails" id="roosterillustration3">
+            <img src="Images/roosterillustrations/rooster4.jpg" class="thumbnails" id="roosterillustration4">
+            <img src="Images/roosterillustrations/rooster5.jpg" class="thumbnails" id="roosterillustration5">
+            <img src="Images/roosterillustrations/rooster6.jpg" class="thumbnails" id="roosterillustration6">
+            <img src="Images/roosterillustrations/rooster7.jpg" class="thumbnails" id="roosterillustration7">
+            <img src="Images/roosterillustrations/rooster8.jpg" class="thumbnails" id="roosterillustration8">
+            <img src="Images/roosterillustrations/rooster9.jpg" class="thumbnails" id="roosterillustration9">
+            <img src="Images/roosterillustrations/rooster10.jpg" class="thumbnails" id="roosterillustration10">
+            </div>
+        <a href="#title" id="return">Back to top &uarr;</a>
+        <a href="#title" id="return2">&uarr;</a>
+        </div>
+    </main>
+    <div id="container3">
+        <footer>
+            Copyright © 2017 Mai Chao Duddeck & Joe Grosskreutz 
+        </footer>
+    </div>
+</body>
+<script>        
+        var modal = document.getElementById('modal1');
+        
+        var img = document.getElementById('women1');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        
+        var thumbnails = document.getElementsByClassName('thumbnails');
+        for (var i = 0; i < thumbnails.length; ++ i) {
+            thumbnails[i].onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+            }
+        }
+        
+        var span = document.getElementsByClassName("exit")[0];
+        
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+</html>

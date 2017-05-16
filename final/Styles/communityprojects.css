@@ -1,0 +1,61 @@
+#header {
+    width: 100%;
+}
+
+#info {
+    text-align: left;
+    background-color: #ffe5ff;
+    display: inline;
+}
+
+p:first-of-type {
+    font-size: 20.5pt;
+}
+
+p:last-of-type {
+    font-size: 16pt;
+}
+
+.right {
+    float: right;
+    width: 35%;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    box-shadow: 8pt 8pt 8pt grey;
+}
+
+#CESF {
+    width: 25%;
+}
+
+.left {
+    float: left;
+    width: 35%;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    box-shadow: -8pt 8pt 8pt grey;
+}
+
+hr {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media screen and (max-width: 60em) {
+    #header {
+        width: 100%;
+        margin: 0;
+    }
+    
+    #CESF {
+        float: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .right, .left {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+}

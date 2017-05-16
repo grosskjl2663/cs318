@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mai Chao's Art & Writing - Artwork</title>
+    <link rel="stylesheet" type="text/css" href="Styles/index.css">
+    <link rel="stylesheet" type="text/css" href="Styles/artwork.css">
+    <script>
+        function explode(img) {
+            var exploded = document.getElementById('exploded');
+            exploded.src = img.src;
+            
+            var statement = document.getElementById('statement');
+            
+            console.log(img.src);
+            if (img.id == 'daughters1') {
+                statement.innerHTML = 'Girls are the pride and joy of many families. Often, the family’s wealth is shown through the adornment of clothing and jewelry on their daughters.';
+            } else if (img.id == 'daughters2') {
+                statement.innerHTML = 'Hmong girls in Thailand cut their hair short to fit in with Thai society, but they hold on tightly to their cultural roots.';
+            } else if (img.id == 'daughters3') {
+                statement.innerHTML = 'Older daughters share a great responsibility of helping out around the house. They also take care of young siblings by carrying them on their backs while working.';
+            } else if (img.id == 'daughters4') {
+                statement.innerHTML = 'Strong, resilient, and brave daughter.';
+            } else {
+                statement.innerHTML = 'default';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="container1">
+        <header>
+            <h1 id="title">Mai Chao's Art & Writing</h1>
+        </header>
+        <nav>
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li><li><a href="artwork.html">Artwork</a></li><li><a href="writing.html">Writing</a></li><li><a href="communityprojects.html">Community Projects</a></li><li><a href="fireflies.html">Gathering Fireflies</a></li><li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <div id="filler"></div>
+        <div id="container2">
+            <div id="header">
+                <h2 id="artwork">Artwork</h2>
+                <div id="filter1">
+                    <p id="filter">Filter by:</p>
+                    <div id="menu">
+                        <p>Themes &#9660;</p>
+                        <ul>
+                            <li><a href="womensartworks.html">Women</a></li>
+                            <li><a href="daughtersartworks.html">Daughters</a></li>
+                            <li><a href="mothersartworks.html">Mothers & Daughters</a></li>
+                            <li><a href="otherartworks.html">Other</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="gallery">
+                <ul>
+                    <li>
+                        <a href="Images/Daughters/FullSizeRender-1.jpg">
+                        <img src="Images/Daughters/FullSizeRender-1.jpg" class="thumbnail" alt="Daughter 1" onmouseover="explode(this)" id="daughters1">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/Daughters/FullSizeRender-2.jpg">
+                        <img src="Images/Daughters/FullSizeRender-2.jpg" class="thumbnail" alt="Daughter 2" onmouseover="explode(this)" id="daughters2">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/Daughters/FullSizeRender-3.jpg">
+                        <img src="Images/Daughters/FullSizeRender-3.jpg" class="thumbnail" alt="Daughter 3" onmouseover="explode(this)" id="daughters3">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="Images/Daughters/FullSizeRender-4.jpg">
+                        <img src="Images/Daughters/FullSizeRender-4.jpg" class="thumbnail" alt="Daughter 4" onmouseover="explode(this)" id="daughters4">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="label">
+                            <img src="" class="fullsize" id="exploded">
+                            <span id="statement"></span>
+            </div>
+            <br class="clear">
+        <a href="#title" id="return">Back to top &uarr;</a>
+        <a href="#title" id="return2">&uarr;</a>
+    </main>
+    <div id="container3">
+        <footer>
+            Copyright © 2017 Mai Chao Duddeck & Joe Grosskreutz 
+        </footer>
+    </div>
+</body>
+</html>
