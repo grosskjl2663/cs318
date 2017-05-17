@@ -4,54 +4,7 @@
     <title>Mai Chao's Art & Writing - Artwork</title>
     <link rel="stylesheet" type="text/css" href="Styles/index.css">
     <link rel="stylesheet" type="text/css" href="Styles/artwork.css">
-    <script>
-        function explode(img) {
-            var exploded = document.getElementById('exploded');
-            exploded.src = img.src;
-            
-            var statement = document.getElementById('statement');
-            
-            console.log(img.src);
-            if (img.id == 'other1') {
-                statement.innerHTML = '"Dragon Eye" 12x24, Oil<br>Imagine yourself looking up and seeing this view above your head. Mother Nature is the truest artist amongst us.<br>Art inspired by Antelope Canyon.';
-            } else if (img.id == 'other2') {
-                statement.innerHTML = '"Wildflowers and Mountains" 24x24, Mixed Media';
-                
-            } else if (img.id == 'roosterillustration1') {
-                statement.innerHTML = 'Brave Rooster Illustration';
-                
-            } else if (img.id == 'roosterillustration2') {
-                statement.innerHTML = 'Brave Rooster Illustration';
-                
-            } else if (img.id == 'roosterillustration3') {
-                statement.innerHTML = 'Brave Rooster Illustration';
-                
-            } else if (img.id == 'roosterillustration4') {
-                statement.innerHTML = 'Brave Rooster Illustration';
-                
-            } else if (img.id == 'roosterillustration5') {
-                statement.innerHTML = 'Brave Rooster Illustration';
-                
-            } else if (img.id == 'roosterillustration6') {
-                statement.innerHTML = 'Brave Rooster Illustration';
-                
-            } else if (img.id == 'roosterillustration7') {
-                statement.innerHTML = 'Brave Rooster Illustration';
-                
-            } else if (img.id == 'roosterillustration8') {
-                statement.innerHTML = 'Brave Rooster Illustration';
-                
-            } else if (img.id == 'roosterillustration9') {
-                statement.innerHTML = 'Brave Rooster Illustration';
-                
-            } else if (img.id == 'roosterillustration10') {
-                statement.innerHTML = 'Brave Rooster Illustration';
-                
-            } else {
-                statement.innerHTML = 'default';
-            }
-        }
-    </script>
+    <link rel="stylesheet" type="text/css" href="Styles/common.css">
 </head>
 <body>
     <div id="container1">
@@ -78,83 +31,34 @@
                             <li><a href="daughtersartworks.html">Daughters</a></li>
                             <li><a href="mothersartworks.html">Mothers & Daughters</a></li>
                             <li><a href="otherartworks.html">Other</a></li>
+                            <li><a href="artworks.html">All</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <hr>
+                    <div class="modal" id="modal1">
+                        <span class="exit" onclick="document.getElementById('modal1').style.display='none'">&times;</span>
+                        <img src="" alt="DEFAULT" class="gallerydisplay" id="img01">
+                        <div id="caption"></div>
+                    </div>
             <div id="gallery">
-                <ul>
-                    <li>
-                        <a href="Images/other/dragoneye.jpg">
-                        <img src="Images/other/dragoneye.jpg" class="thumbnail" alt="Dragon Eye" onmouseover="explode(this)" id="other1">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Images/other/wildflowersandmountains.jpg">
-                        <img src="Images/other/wildflowersandmountains.jpg" class="thumbnail" alt="Wildflowers and Mountains" onmouseover="explode(this)" id="other2">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Images/roosterillustrations/rooster1.jpg">
-                        <img src="Images/roosterillustrations/rooster1.jpg" class="thumbnail" alt="Brave Rooster 1" onmouseover="explode(this)" id="roosterillustration1">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Images/roosterillustrations/rooster2.jpg">
-                        <img src="Images/roosterillustrations/rooster2.jpg" class="thumbnail" alt="Brave Rooster 2" onmouseover="explode(this)" id="roosterillustration2">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Images/roosterillustrations/rooster3.jpg">
-                        <img src="Images/roosterillustrations/rooster3.jpg" class="thumbnail" alt="Brave Rooster 3" onmouseover="explode(this)" id="roosterillustration3">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Images/roosterillustrations/rooster4.jpg">
-                        <img src="Images/roosterillustrations/rooster4.jpg" class="thumbnail" alt="Brave Rooster 4" onmouseover="explode(this)" id="roosterillustration4">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Images/roosterillustrations/rooster5.jpg">
-                        <img src="Images/roosterillustrations/rooster5.jpg" class="thumbnail" alt="Brave Rooster 5" onmouseover="explode(this)" id="roosterillustration5">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Images/roosterillustrations/rooster6.jpg">
-                        <img src="Images/roosterillustrations/rooster6.jpg" class="thumbnail" alt="Brave Rooster 6" onmouseover="explode(this)" id="roosterillustration6">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Images/roosterillustrations/rooster7.jpg">
-                        <img src="Images/roosterillustrations/rooster7.jpg" class="thumbnail" alt="Brave Rooster 7" onmouseover="explode(this)" id="roosterillustration7">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Images/roosterillustrations/rooster8.jpg">
-                        <img src="Images/roosterillustrations/rooster8.jpg" class="thumbnail" alt="Brave Rooster 8" onmouseover="explode(this)" id="roosterillustration8">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Images/roosterillustrations/rooster9.jpg">
-                        <img src="Images/roosterillustrations/rooster9.jpg" class="thumbnail" alt="Brave Rooster 9" onmouseover="explode(this)" id="roosterillustration9">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Images/roosterillustrations/rooster10.jpg">
-                        <img src="Images/roosterillustrations/rooster10.jpg" class="thumbnail" alt="Brave Rooster 10" onmouseover="explode(this)" id="roosterillustration10">
-                        </a>
-                    </li>
-                </ul>
+            <img src="Images/other/dragoneye.jpg" alt="'Dragon Eye' 12x24, Oil<br>Imagine yourself looking up and seeing this view above your head. Mother Nature is the truest artist amongst us. Art inspired by Antelope Canyon." class="thumbnails" id="other1">
+            <img src="Images/other/wildflowersandmountains.jpg" alt="'Wildflowers and Mountains' 24x24, Mixed Media" class="thumbnails" id="other2">
+            <img src="Images/roosterillustrations/rooster1.jpg" class="thumbnails" id="roosterillustration1">
+            <img src="Images/roosterillustrations/rooster2.jpg" class="thumbnails" id="roosterillustration2">
+            <img src="Images/roosterillustrations/rooster3.jpg" class="thumbnails" id="roosterillustration3">
+            <img src="Images/roosterillustrations/rooster4.jpg" class="thumbnails" id="roosterillustration4">
+            <img src="Images/roosterillustrations/rooster5.jpg" class="thumbnails" id="roosterillustration5">
+            <img src="Images/roosterillustrations/rooster6.jpg" class="thumbnails" id="roosterillustration6">
+            <img src="Images/roosterillustrations/rooster7.jpg" class="thumbnails" id="roosterillustration7">
+            <img src="Images/roosterillustrations/rooster8.jpg" class="thumbnails" id="roosterillustration8">
+            <img src="Images/roosterillustrations/rooster9.jpg" class="thumbnails" id="roosterillustration9">
+            <img src="Images/roosterillustrations/rooster10.jpg" class="thumbnails" id="roosterillustration10">
             </div>
-            <div class="label">
-                <img src="" class="fullsize" id="exploded">
-                <span id="statement"></span>
-                <div style="clear:both;"></div>
-            </div>
-            <br class="clear">
         <a href="#title" id="return">Back to top &uarr;</a>
         <a href="#title" id="return2">&uarr;</a>
+        </div>
     </main>
     <div id="container3">
         <footer>
@@ -162,4 +66,25 @@
         </footer>
     </div>
 </body>
+<script>        
+        var modal = document.getElementById('modal1');
+        
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        
+        var thumbnails = document.getElementsByClassName('thumbnails');
+        for (var i = 0; i < thumbnails.length; ++ i) {
+            thumbnails[i].onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        }
+        
+        var span = document.getElementsByClassName("exit")[0];
+        
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
 </html>

@@ -4,23 +4,7 @@
     <title>Mai Chao's Art & Writing - Artwork</title>
     <link rel="stylesheet" type="text/css" href="Styles/index.css">
     <link rel="stylesheet" type="text/css" href="Styles/artwork.css">
-    <script>
-        function explode(img) {
-            var exploded = document.getElementById('exploded');
-            exploded.src = img.src;
-            
-            var statement = document.getElementById('statement');
-            
-            console.log(img.src);
-            if (img.id == 'women1') {
-                statement.innerHTML = 'Girl carrying a traditional bamboo back basket in a rice field. She is contemplating and thinking about her bright future.';
-            } else if (img.id == 'women2') {
-                statement.innerHTML = 'Gathering logs to burn under the hearth for cooking.';
-            } else {
-                statement.innerHTML = 'default';
-            }
-        }
-    </script>
+    <link rel="stylesheet" type="text/css" href="Styles/common.css">
 </head>
 <body>
     <div id="container1">
@@ -47,32 +31,24 @@
                             <li><a href="daughtersartworks.html">Daughters</a></li>
                             <li><a href="mothersartworks.html">Mothers & Daughters</a></li>
                             <li><a href="otherartworks.html">Other</a></li>
+                            <li><a href="artwork.html">All</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
             <hr>
+                    <div class="modal" id="modal1">
+                        <span class="exit" onclick="document.getElementById('modal1').style.display='none'">&times;</span>
+                        <img src="" alt="DEFAULT" class="gallerydisplay" id="img01">
+                        <div id="caption"></div>
+                    </div>
             <div id="gallery">
-                <ul>
-                    <li>
-                        <a href="Images/Women/FullSizeRender-1.jpg">
-                        <img src="Images/Women/FullSizeRender-1.jpg" class="thumbnail" alt="Women 1" onmouseover="explode(this)" id="women1">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="Images/Women/FullSizeRender-2.jpg">
-                        <img src="Images/Women/FullSizeRender-2.jpg" class="thumbnail" alt="Women 2" onmouseover="explode(this)" id="women2">
-                        </a>
-                    </li>
-                </ul>
+            <img src="Images/Women/FullSizeRender-1.jpg" alt="Girl carrying a traditional bamboo back basket in a rice field. She is contemplating and thinking about her bright future." class="thumbnails" id="women1">
+            <img src="Images/Women/FullSizeRender-2.jpg" alt="Gathering logs to burn under the hearth for cooking." class="thumbnails" id="women2">
             </div>
-            <div class="label">
-                            <img src="" class="fullsize" id="exploded">
-                            <span id="statement"></span>
-            </div>
-            <br class="clear">
         <a href="#title" id="return">Back to top &uarr;</a>
         <a href="#title" id="return2">&uarr;</a>
+        </div>
     </main>
     <div id="container3">
         <footer>
@@ -80,4 +56,25 @@
         </footer>
     </div>
 </body>
+<script>        
+        var modal = document.getElementById('modal1');
+        
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        
+        var thumbnails = document.getElementsByClassName('thumbnails');
+        for (var i = 0; i < thumbnails.length; ++ i) {
+            thumbnails[i].onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            }
+        }
+        
+        var span = document.getElementsByClassName("exit")[0];
+        
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
 </html>

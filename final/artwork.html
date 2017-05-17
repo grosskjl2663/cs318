@@ -31,6 +31,7 @@
                             <li><a href="daughtersartworks.html">Daughters</a></li>
                             <li><a href="mothersartworks.html">Mothers & Daughters</a></li>
                             <li><a href="otherartworks.html">Other</a></li>
+                            <li><a href="artwork.html">All</a></li>
                         </ul>
                     </div>
                 </div>
@@ -50,7 +51,7 @@
             <img src="Images/Daughters/FullSizeRender-3.jpg" alt="Older daughters share a great responsibility of helping out around the house. They also take care of young siblings by carrying them on their backs while working." class="thumbnails" id="daughters3">
             <img src="Images/Daughters/FullSizeRender-4.jpg" alt="Strong, resilient, and brave daughter." class="thumbnails" id="daughters4">
             <img src="Images/Women/FullSizeRender-2.jpg" alt="Gathering logs to burn under the hearth for cooking." class="thumbnails" id="women2">
-            <img src="Images/other/dragoneye.jpg" alt="'Dragon Eye' 12x24, Oil<br>Imagine yourself looking up and seeing this view above your head. Mother Nature is the truest artist amongst us.<br>Art inspired by Antelope Canyon." class="thumbnails" id="other1">
+            <img src="Images/other/dragoneye.jpg" alt="'Dragon Eye' 12x24, Oil<br>Imagine yourself looking up and seeing this view above your head. Mother Nature is the truest artist amongst us. Art inspired by Antelope Canyon." class="thumbnails" id="other1">
             <img src="Images/other/wildflowersandmountains.jpg" alt="'Wildflowers and Mountains' 24x24, Mixed Media" class="thumbnails" id="other2">
             <img src="Images/roosterillustrations/rooster1.jpg" class="thumbnails" id="roosterillustration1">
             <img src="Images/roosterillustrations/rooster2.jpg" class="thumbnails" id="roosterillustration2">
@@ -76,20 +77,15 @@
 <script>        
         var modal = document.getElementById('modal1');
         
-        var img = document.getElementById('women1');
         var modalImg = document.getElementById("img01");
         var captionText = document.getElementById("caption");
-        img.onclick = function(){
-            modal.style.display = "block";
-            modalImg.src = this.src;
-            captionText.innerHTML = this.alt;
-        }
         
         var thumbnails = document.getElementsByClassName('thumbnails');
         for (var i = 0; i < thumbnails.length; ++ i) {
             thumbnails[i].onclick = function(){
                 modal.style.display = "block";
                 modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
             }
         }
         
