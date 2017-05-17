@@ -87,6 +87,10 @@
     width: 85%;
 }
 
+pre {
+    margin-bottom: 0;
+}
+
 #poem1, #poem2 {
     display: inline-block;
     width: 48%;
@@ -94,9 +98,14 @@
     float: left;
 }
 
-@media screen and (max-width: 85em) {
+@media screen and (max-width: 76em) {
+    
     #illustrations {
         clear: both;
+    }
+    
+    .upcontainer #illustration {
+        width: 17%;
     }
     
     #floatleft {
@@ -152,7 +161,7 @@
     }
 }
 
-@media screen and (max-width: 63em) {
+@media screen and (max-width: 64em) {
     
     .upcontainer #illustration {
         display: inline;
@@ -186,7 +195,7 @@
     }
 }
 
-@media screen and (max-width: 25em) {
+@media screen and (max-width: 30em) {
     .upcontainer #illustration {
         width: 100%;
     }

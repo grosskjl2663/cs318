@@ -16,21 +16,21 @@ p:last-of-type {
     font-size: 16pt;
 }
 
+#CESF {
+    width: 25%;
+}
+
 .right {
     float: right;
-    width: 35%;
+    width: 30%;
     margin-left: 15px;
     margin-bottom: 15px;
     box-shadow: 8pt 8pt 8pt grey;
 }
 
-#CESF {
-    width: 25%;
-}
-
 .left {
     float: left;
-    width: 35%;
+    width: 30%;
     margin-right: 15px;
     margin-bottom: 15px;
     box-shadow: -8pt 8pt 8pt grey;
@@ -39,6 +39,10 @@ p:last-of-type {
 hr {
     margin-left: 0;
     margin-right: 0;
+}
+
+hr:nth-of-type(2) {
+    clear: both;
 }
 
 @media screen and (max-width: 60em) {
@@ -56,6 +60,6 @@ hr {
     .right, .left {
         float: none;
         width: 100%;
-        margin: 0;
+        margin: 0 0 10px 0;
     }
 }
