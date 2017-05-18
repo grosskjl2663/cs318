@@ -1,6 +1,7 @@
 .upcontainer .enlargedillustrations {
     width: 30%;
-    padding: 10px;
+    padding: 15px;
+    box-shadow: 0 0 0 7px #C0C0C0 inset;
 }
 
 .enlargedillustrations.right, .enlargedillustrations.left {
@@ -10,13 +11,11 @@
 .enlargedillustrations.right {
     float: right;
     margin-left: 20px;
-    box-shadow: 8px 8px 8px grey;
 }
 
 .enlargedillustrations.left {
     float: left;
     margin-right: 20px;
-    box-shadow: -8px 8px 8px grey;
 }
 
 #readless {
