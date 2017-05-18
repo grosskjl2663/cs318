@@ -129,3 +129,9 @@
     display: block;
     border-radius: 5px;
 }
+
+@media screen and (max-width: 35em) {
+    .modal {
+        padding-top: 100px;
+    }
+}

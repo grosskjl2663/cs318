@@ -19,7 +19,7 @@ body {
     background-color: #ffe5ff;
     width: 85%;
     height: auto;
-    padding: 10px;
+    padding: 20px;
 }
 
 #container2 #content {
@@ -79,7 +79,7 @@ nav ul li:first-of-type {
 
 nav ul li {
     display: inline-block;
-    font-size: 15pt;
+    font-size: 16pt;
     border-left-color: white;
     border-left-width: 1px;
     border-left-style: solid;

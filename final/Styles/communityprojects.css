@@ -6,33 +6,35 @@
     text-align: left;
     background-color: #ffe5ff;
     display: inline;
+    margin: 5px;
 }
 
 p:first-of-type {
     font-size: 20.5pt;
+    margin: 0;
 }
 
 p:last-of-type {
     font-size: 16pt;
 }
 
-#CESF {
+#CELF.right {
     width: 25%;
 }
 
 .right {
     float: right;
     width: 30%;
-    margin-left: 15px;
-    margin-bottom: 15px;
+    margin-left: 20px;
+    margin-bottom: 20px;
     box-shadow: 8pt 8pt 8pt grey;
 }
 
 .left {
     float: left;
     width: 30%;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
     box-shadow: -8pt 8pt 8pt grey;
 }
 
