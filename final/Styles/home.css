@@ -115,10 +115,9 @@ h2 {
     }
     
     #floral {
-        float: right;
-        width: 45%;
-        margin-left: 20px;
-        margin-right: 15px;
+        float: none;
+        width: 100%;
+        margin: 0;
     }
     
     p {

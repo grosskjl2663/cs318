@@ -88,10 +88,8 @@ input:nth-of-type(3) {
 #submit:hover {
     background-color: #660066;
     color: white;
-    position: relative;
-    left: 3px;
-    top: 3px;
     cursor: pointer;
+    transition: 0.5s ease;
 }
 
 @media screen and (max-width: 65em) {

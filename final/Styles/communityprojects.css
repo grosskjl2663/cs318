@@ -53,7 +53,7 @@ hr:nth-of-type(2) {
         margin: 0;
     }
     
-    #CESF {
+    #CELF.right {
         float: none;
         width: 100%;
         margin-bottom: 20px;

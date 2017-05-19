@@ -26,16 +26,10 @@ h2 {
 }
 
 #purchase:hover {
-    background-color: #660066;
-    color: white;
+    background-color: #330033;
     position: relative;
-    left: 3px;
-    top: 3px;
-    cursor: pointer; 
-}
-
-#purchase a:hover {
-    color: #ffccff;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 #purchase p {

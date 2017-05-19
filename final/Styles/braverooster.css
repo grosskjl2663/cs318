@@ -33,6 +33,7 @@
 #readless:hover {
     background-color: #4c004c;
     color: white;
+    transition: 0.3s ease;
 }
 
 .illustrations {

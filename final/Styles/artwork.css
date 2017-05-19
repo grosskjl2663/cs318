@@ -10,6 +10,7 @@ h2 {
 
 #filter1 {
     display: inline-block;
+    margin-bottom: 15px;
 }
 
 #filter, #menu {
@@ -94,7 +95,7 @@ img {
     }
 }
 
-@media screen and (max-width: 35em) {
+@media screen and (max-width: 50em) {
     
     .thumbnails {
         margin: 15px 0 15px 0;
